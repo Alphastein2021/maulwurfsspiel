@@ -1,5 +1,10 @@
-let Zufall = 0
+input.onGesture(Gesture.Shake, function () {
+    basic.showNumber(Spielstand)
+    basic.pause(3000)
+})
 let Spielstand = 0
+let Zufall = 0
+Spielstand = 0
 basic.forever(function () {
     basic.showLeds(`
         . . # . .
